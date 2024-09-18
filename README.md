@@ -3,6 +3,5 @@ Hello everyone, and welcome to my blog. It's an ever-changing collection of inte
 
 > I hope you find something useful here. Please check back often.
 > 
-> Thank you and enjoy looking around.
->
+> Thank you and enjoy looking around. \
 > &mdash;Scott
