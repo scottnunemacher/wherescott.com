@@ -4,5 +4,8 @@ module.exports = function (eleventyConfig) {
             input: "src",
             output: "public",
         },
+        markdownTemplateEngine: 'njk',
+        dataTemplateEngine: 'njk',
+        htmlTemplateEngine: 'njk',
     };
 };
