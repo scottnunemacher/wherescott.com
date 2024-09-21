@@ -1,0 +1,8 @@
+# Local directory
+_local/
+
+# node_modules
+node_modules/
+
+# 11ty output directory
+public/
