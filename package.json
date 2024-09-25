@@ -2,7 +2,7 @@
   "name": "wherescott.com",
   "version": "1.0.0",
   "description": "wherescott.com - Where Scott Does Everything",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
