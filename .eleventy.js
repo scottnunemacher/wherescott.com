@@ -1,3 +1,5 @@
+const sass = require("sass");
+
 module.exports = function (eleventyConfig) {
     // Allow passthrough copy
     eleventyConfig.addPassthroughCopy("src/assets/fonts");
