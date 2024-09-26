@@ -6,17 +6,17 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/images");
     eleventyConfig.addPassthroughCopy("src/assets/js");
 
-    // Change 11ty defaults
+    // Change eleventy defaults
     return {
         dir: {
-            input: "src",
-            output: "public",
-            data: "_data",
-            includes: "_includes",
-			layouts: "_includes/layouts",
+            input:              "src",
+            output:             "public",
+            data:               "_data",
+            includes:           "_includes",
+			layouts:            "_includes/layouts",
         },
-        markdownTemplateEngine: 'html',
-        dataTemplateEngine: 'njk',
-        htmlTemplateEngine: 'njk',
+        markdownTemplateEngine: "html",
+        dataTemplateEngine:     "njk",
+        htmlTemplateEngine:     "njk",
     };
 };
