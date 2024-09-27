@@ -16,7 +16,6 @@ body > footer {
 body > header {
     flex-direction: row;
     justify-content: space-between;
-    // justify-content: flex-end;
 }
 
 body > footer {
@@ -25,24 +24,13 @@ body > footer {
 }
 
 // blockquotes
-blockquote {
-    text-align: center;
-    margin: 30px auto;
-    padding: var(--pico-spacing) 30px;
-    max-width: 600px;
-}
-
 blockquote > p {
     font-size: 1.2rem;
+    text-align: center;
     font-style: italic;
 }
 
-blockquote > p > cite {
-    display: block;
-    font-size: 1rem;
-    text-align: left;
-}
-
+// headers
 h1 {
     text-align: center;
 }
