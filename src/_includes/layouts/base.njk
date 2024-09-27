@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>{{ title }}</title>
 </head>
 <body>
@@ -11,11 +13,12 @@
             <a href="/">Home</a>
         </nav>
     </header>
-    
-    {{ content | safe }} 
-    
+    <main>
+        <a href="#"><h1>{{ title }}</h1></a>
+{{ content | safe }}
+    </main>
     <footer>
-        <p>&copy; &mdash;<a href="/">Scott</a></p>
+        <p>&copy; Where Scott Does Everything</p>
     </footer>
 </body>
 </html>

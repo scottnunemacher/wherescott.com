@@ -5,8 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "clean": "rm -rf public",
-    "watch:sass": "sass --no-source-map --watch src/assets/sass:assets/css",
-    "build:sass": "sass --no-source-map src/assets/sass:assets/css",
+    "watch:sass": "sass --no-source-map --watch --load-path=node_modules/@picocss/pico/scss/ src/assets/css/style.scss:public/assets/css/style.css",
+    "build:sass": "sass --no-source-map --load-path=node_modules/@picocss/pico/scss/ src/assets/css/style.scss:public/assets/css/style.css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all clean --parallel watch:*",

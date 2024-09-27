@@ -1,0 +1,27 @@
+// Pico lightweight version
+// from: https://picocss.com/docs/sass#settings
+// also: https://github.com/picocss/pico/blob/main/scss/_settings.scss
+@use "pico" with (
+    $enable-semantic-container: true,
+    $enable-classes: false,
+    $modules: (
+        "content/code": false,
+        "forms/input-color": false,
+        "forms/input-date": false,
+        "forms/input-file": false,
+        "forms/input-range": false,
+        "forms/input-search": false,
+        "components/accordion": false,
+        "components/card": false,
+        "components/dropdown": false,
+        "components/loading": false,
+        "components/modal": false,
+        "components/nav": false,
+        "components/progress": false,
+        "components/tooltip": false,
+        "utilities/accessibility": false,
+        "utilities/reduce-motion": false
+    ),
+    $theme-color: "azure",
+);
+@import "custom.scss";

@@ -2,9 +2,10 @@
 title:  Where Scott Does Everything
 ---
 
-Hello everyone, and welcome to my blog. It's an ever-changing collection of interests to share with others.
+Hello everyone, and welcome to my site. It's an ever-changing collection of interests to share with others.
 
-> I hope you find something useful here. Please check back often.
-> Thank you and enjoy looking around.
-> 
-> &mdash;<cite><a href="/">Scott</a></cite>
+> "I hope you find something useful here.<br>
+> Please check back often.<br>
+> Thank you, and enjoy looking around!"
+>
+> <cite>&mdash; Scott</cite>

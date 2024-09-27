@@ -1,0 +1,47 @@
+// body
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body > header,
+body > main,
+body > footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal);
+}
+
+body > header {
+    flex-direction: row;
+    justify-content: space-between;
+    // justify-content: flex-end;
+}
+
+body > footer {
+    margin-top: auto;
+    align-items: center;
+}
+
+// blockquotes
+blockquote {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+blockquote > p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+blockquote > p > cite {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
