@@ -16,6 +16,14 @@
     <main>
         <a href="{{ page.url }}"><h1>{{ title }}</h1></a>
         {{ content }}
+        <div class="tags">
+            <p>Tags:&nbsp;</p>
+            <nav>
+            {% for tag in tags %}
+            <a>{{ tag }}</a>
+            {% endfor %}
+            </nav>
+        </div>
     </main>
     <footer>
         <p>&copy; Where Scott Does Everything</p>
