@@ -7,11 +7,11 @@ module.exports = function (eleventyConfig) {
     // Change eleventy defaults
     return {
         dir: {
-            input:              "src",
-            output:             "public",
-            data:               "_data",
-            includes:           "_includes",
-			layouts:            "_includes/layouts",
+            input:      "src",
+            output:     "public",
+            data:       "_data",
+            includes:   "_includes",
+			layouts:    "_includes/layouts",
         },
     };
 };
