@@ -20,7 +20,7 @@
             <p>Tags:&nbsp;</p>
             <nav>
             {% for tag in tags %}
-            <a>{{ tag }}</a>
+            <a href="{{ tag.url }}">{{ tag }}</a>
             {% endfor %}
             </nav>
         </div>
