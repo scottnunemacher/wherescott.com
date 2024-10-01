@@ -16,14 +16,11 @@
     <main>
         <a href="{{ page.url }}"><h1>{{ title }}</h1></a>
         {{ content }}
-        <div class="tags">
-            <p>Tags:&nbsp;</p>
-            <nav>
+        <ul class="tags-list">
             {% for tag in tags %}
-            <a href="{{ tag.url }}">{{ tag }}</a>
-            {% endfor %}
-            </nav>
-        </div>
+            <li><a class="tags-label" role="button" href="{{ tag.url }}">{{ tag }}</a></li>
+            {%- endfor -%}
+        </ul>
     </main>
     <footer>
         <p>&copy; Where Scott Does Everything</p>

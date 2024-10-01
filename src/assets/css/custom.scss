@@ -35,7 +35,24 @@ h1 {
     text-align: center;
 }
 
-.tags {
+// Tags list
+ul.tags-list {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+ul.tags-list li {
+    list-style: none;
+}
+
+.tags-label {
+    margin: .75rem 0;
+    padding: .2rem .5rem;
+    margin-right: .5rem;
+    // text-decoration: none;
+    // border: 1px solid #aaaaaa;
+    // color: var(--pico-color);
 }
