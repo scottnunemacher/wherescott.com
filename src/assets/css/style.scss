@@ -12,7 +12,6 @@
         "forms/input-range": false,
         "forms/input-search": false,
         "components/accordion": false,
-        "components/card": false,
         "components/dropdown": false,
         "components/loading": false,
         "components/modal": false,
@@ -24,4 +23,4 @@
     ),
     $theme-color: "azure",
 );
-@use "./custom.scss";
+// @use "./custom.scss";
