@@ -1,0 +1,29 @@
+// Scrollbar customizations
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Change the width here */
+    height: 12px; /* For horizontal scrollbar if needed */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); /* Optional: track background color */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Optional: track background color */
+    border-radius: 0px;
+    opacity: 1; /* Start fully visible */
+    transition: opacity 0.3s; /* Smooth transition for fading out */
+}
+
+/* Thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Optional: color when hovered */
+}

@@ -1,26 +1,45 @@
-// Pico lightweight version
-// from: https://picocss.com/docs/sass#settings
-// also: https://github.com/picocss/pico/blob/main/scss/_settings.scss
-@use "pico" with (
-    $enable-semantic-container: true,
-    $enable-classes: false,
-    $modules: (
-        "content/code": false,
-        "forms/input-color": false,
-        "forms/input-date": false,
-        "forms/input-file": false,
-        "forms/input-range": false,
-        "forms/input-search": false,
-        "components/accordion": false,
-        "components/dropdown": false,
-        "components/loading": false,
-        "components/modal": false,
-        "components/nav": false,
-        "components/progress": false,
-        "components/tooltip": false,
-        "utilities/accessibility": false,
-        "utilities/reduce-motion": false
-    ),
-    $theme-color: "azure",
-);
-@use "./custom.scss";
+// Read options here: https://getbootstrap.com/docs/5.2/customize/sass/
+// Include all of Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Then include any default variable overrides
+@import "./variable_overrides";
+
+// Then include any other overrides
+@import "./custom";
+
+// ===
+
+// // Option 2: Include parts of Bootstrap
+// // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// @import "../../../node_modules/bootstrap/scss/functions";
+
+// // 2. Include any default variable overrides here
+// @import "./variable_overrides";
+
+// // 3. Include remainder of required Bootstrap stylesheets
+// @import "../../../node_modules/bootstrap/scss/variables";
+
+// // 4. Include any default map overrides here
+// @import "./map_overrides";
+
+// // 5. Include remainder of required parts
+// @import "../../../node_modules/bootstrap/scss/maps";
+// @import "../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../node_modules/bootstrap/scss/root";
+
+// // 6. Optionally include any other parts as needed
+// @import "../../../node_modules/bootstrap/scss/utilities";
+// @import "../../../node_modules/bootstrap/scss/reboot";
+// @import "../../../node_modules/bootstrap/scss/type";
+// @import "../../../node_modules/bootstrap/scss/images";
+// @import "../../../node_modules/bootstrap/scss/containers";
+// @import "../../../node_modules/bootstrap/scss/grid";
+// @import "../../../node_modules/bootstrap/scss/helpers";
+// @import "../../../node_modules/bootstrap/scss/nav";
+// @import "../../../node_modules/bootstrap/scss/navbar";
+
+// // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// @import "../../../node_modules/bootstrap/scss/utilities/api";
+
+// // 8. Add additional custom code here

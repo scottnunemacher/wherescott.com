@@ -1,34 +1,39 @@
 {
-  "name": "wherescott.com",
-  "version": "2.0.0",
-  "description": "wherescott.com - Where Scott Does Everything",
-  "main": ".eleventy.js",
-  "scripts": {
-    "clean": "rm -rf public",
-    "watch:sass": "sass --no-source-map --watch --load-path=node_modules/@picocss/pico/scss/ src/assets/css/style.scss:public/assets/css/style.css",
-    "build:sass": "sass --no-source-map --load-path=node_modules/@picocss/pico/scss/ src/assets/css/style.scss:public/assets/css/style.css --style compressed",
-    "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
-    "start": "npm-run-all clean --parallel watch:*",
-    "build": "npm-run-all clean build:*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scottnunemacher/wherescott.com.git"
-  },
-  "author": "Scott Nunemacher",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scottnunemacher/wherescott.com/issues"
-  },
-  "homepage": "https://github.com/scottnunemacher/wherescott.com#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  },
-  "dependencies": {
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "@picocss/pico": "^2.0.6",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.79.3"
-  }
+    "name": "wherescott.com",
+    "version": "3.0.0",
+    "description": "wherescott.com - Where Scott Does Everything",
+    "main": "eleventy.config.js",
+    "scripts": {
+        "clean": "rimraf public",
+        "watch:sass": "sass --no-source-map --watch src/assets/css/style.scss:public/assets/css/style.css",
+        "build:sass": "sass --no-source-map src/assets/css/style.scss:public/assets/css/style.css",
+        "watch:eleventy": "eleventy --serve",
+        "build:eleventy": "eleventy",
+        "start": "npm-run-all clean --parallel watch:*",
+        "poststart": "echo \"Exited Start.\"",
+        "build": "npm-run-all clean --parallel build:*",
+        "postbuild": "echo \"Build complete.\"",
+        "check-env": "node -e 'console.log(process.env)' | grep npm"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/scottnunemacher/wherescott.com.git"
+    },
+    "author": "Scott Nunemacher",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/scottnunemacher/wherescott.com/issues"
+    },
+    "homepage": "https://github.com/scottnunemacher/wherescott.com#readme",
+    "type": "module",
+    "dependencies": {
+        "@11ty/eleventy": "^3.0.0",
+        "@11ty/eleventy-navigation": "^0.3.5",
+        "bootstrap": "5.2.3",
+        "npm-run-all": "^4.1.5",
+        "sass": "1.23.0"
+    },
+    "devDependencies": {
+        "rimraf": "^6.0.1"
+    }
 }

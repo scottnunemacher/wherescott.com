@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+<section>
+    <h1>Post: {{ title }}</h1>
+    <p>Published: {{ page.date | publishedDateLocal }} &middot; Last Updated: <span id="last-updated" data-iso="{{ page.inputPath | lastUpdatedISO }}"></span></p>
+    {{ content }}
+</section>
+
+<script src="/assets/js/last-updated.js"></script>
